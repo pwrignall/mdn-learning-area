@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Strings: Task 3</title>
-    <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Strings: Task 3</title>
+  <style>
+    p {
+      color: purple;
+      margin: 0.5em 0;
+    }
 
-  <body>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
 
-    <section class="preview">
+<body>
+
+  <section class="preview">
 
 
 
-    </section>
-
+<<<<<<< Updated upstream
   </body>
   <script>
     const quote = 'I dO nOT lIke gREen eGgS anD HAM';
+=======
+  </section>
+>>>>>>> Stashed changes
 
-    // Add your code here
+</body>
+<script>
+  let quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
-    // Don't edit the code below here!
+  // Add your code here
 
-    const section = document.querySelector('section');
+  let fixedQuote = quote.slice(0, 1).toUpperCase() + quote.slice(1).toLowerCase();
+  fixedQuote = fixedQuote.replace('green eggs and ham', 'goat\'s cheese and black pudding')
 
+<<<<<<< Updated upstream
     const para1 = document.createElement('p');
     para1.textContent = fixedQuote;
     const para2 = document.createElement('p');
     para2.textContent = finalQuote;
+=======
+  let finalQuote = fixedQuote + '.'
+>>>>>>> Stashed changes
 
-    section.appendChild(para1);
-    section.appendChild(para2);
-  </script>
+  // Don't edit the code below here!
+
+  const section = document.querySelector('section');
+
+  let para1 = document.createElement('p');
+  para1.textContent = fixedQuote;
+  let para2 = document.createElement('p');
+  para2.textContent = finalQuote;
+
+  section.appendChild(para1);
+  section.appendChild(para2);
+</script>
 
 </html>

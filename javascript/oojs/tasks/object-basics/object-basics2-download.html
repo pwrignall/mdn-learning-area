@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Object basics: Task 2</title>
-    <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Object basics: Task 2</title>
+  <style>
+    p {
+      color: purple;
+      margin: 0.5em 0;
+    }
 
-  <body>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
 
-    <section class="preview">
+<body>
 
-
-
-    </section>
-
-  </body>
-  <script>
-    let bandInfo;
-
-    // Add your code here
+  <section class="preview">
 
 
-    // Don't edit the code below here!
 
-    const section = document.querySelector('section');
-    let para1 = document.createElement('p');
-    para1.textContent = bandInfo;
-    section.appendChild(para1);
-  </script>
+  </section>
+
+</body>
+<script>
+  let bandInfo;
+
+  // Add your code here
+
+  let theBand = {
+    name: 'Alt-J',
+    nationality: 'British',
+    genre: 'Indie Rock',
+    members: 4,
+    formed: 2008,
+    split: false,
+    albums: [
+      {
+        name: 'An Awesome Wave',
+        released: 2012,
+      },
+      {
+        name: 'This Is All Yours',
+        released: 2014,
+      },
+      {
+        name: 'Relaxer',
+        released: 2017,
+      },
+    ],
+  }
+
+  bandInfo = `${theBand.name}, a ${theBand.nationality} band formed in ${theBand.formed} and ${theBand.split == false ? 'still going' : 'split in ' + theBand.split}, plays ${theBand.genre} music. ${theBand.name} released its first album, ${theBand.albums[0].name}, in ${theBand.albums[0].released}.`
+
+  // Don't edit the code below here!
+
+  const section = document.querySelector('section');
+  let para1 = document.createElement('p');
+  para1.textContent = bandInfo;
+  section.appendChild(para1);
+</script>
 
 </html>
